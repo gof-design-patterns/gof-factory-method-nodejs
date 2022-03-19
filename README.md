@@ -1,0 +1,1 @@
+# gof-factory-method-nodejs
