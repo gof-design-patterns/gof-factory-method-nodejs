@@ -14,7 +14,9 @@ For example, both **AWSStorageClient** and **GoogleStorageClient** classes shoul
 
 ![Alt text](Factory-Method.png?raw=true "Factory Method diagram")
 
-The code that uses the factory method (**runLogic**) doesn’t see a difference between the actual products returned by various subclasses. The **runLogic** treats all the products as abstract **Client**. The **runLogic** knows that all **Client** objects are supposed to have the **upload** method, but exactly how it works isn’t important to the **runLogic** .
+The code that uses the factory method (**runLogic**) doesn’t see a difference between the actual products returned by various subclasses. The **runLogic** treats all the products as abstract **Client**. The **runLogic** knows that all **Client** objects are supposed to have the **upload** method, but exactly how it works isn’t important to the **runLogic**.
+
+This project was based on the article: Factory Method from Refactory Guru, [click here](https://refactoring.guru/design-patterns/factory-method) to see the source.
 
 ## 🧙 Why
 
