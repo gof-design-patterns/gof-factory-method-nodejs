@@ -2,11 +2,12 @@
   "name": "gof-factory-method-nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "app.ts",
+  "main": "main/app.ts",
   "scripts": {
-    "start": "sucrase-node src/app.ts",
-    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand --no-cache",
-    "test:staged": "npm test -- --findRelatedTests"
+    "start": "sucrase-node src/main/app.ts",
+    "test": "jest --passWithNoTests --silent --runInBand --no-cache",
+    "test:staged": "npm test -- --findRelatedTests",
+    "lint": "eslint 'src/**'"
   },
   "repository": {
     "type": "git",
@@ -36,5 +37,7 @@
     "ts-jest": "^27.1.3",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.2"
+  },
+  "dependencies": {
   }
 }
